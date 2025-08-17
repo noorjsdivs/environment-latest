@@ -1,0 +1,61 @@
+{
+  "name": "environment-ts",
+  "version": "1.0.0",
+  "description": "Modern TypeScript package for detecting JavaScript runtime environments and operating systems",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/index.test.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run typecheck && npm run build && npm test",
+    "release": "npm run prepublishOnly && npm publish"
+  },
+  "keywords": [
+    "environment",
+    "runtime",
+    "detection",
+    "browser",
+    "node",
+    "deno",
+    "bun",
+    "electron",
+    "webworker",
+    "platform",
+    "os",
+    "typescript",
+    "javascript",
+    "environment-detection",
+    "runtime-detection"
+  ],
+  "author": "Noor Mohammad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noorjsdivs/environment-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noorjsdivs/environment-ts/issues"
+  },
+  "homepage": "https://github.com/noorjsdivs/environment-ts#readme",
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
