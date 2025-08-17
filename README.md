@@ -1,6 +1,6 @@
-# Environment TS
+# Environment JS
 
-[![npm version](https://badge.fury.io/js/environment-ts.svg)](https://badge.fury.io/js/environment-ts)
+[![npm version](https://badge.fury.io/js/environment-js.svg)](https://badge.fury.io/js/environment-js)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![YouTube](https://img.shields.io/badge/YouTube-ReactJS%20BD-red.svg?logo=youtube)](https://www.youtube.com/@reactjsBD)
@@ -25,19 +25,19 @@ A comprehensive, zero-dependency TypeScript library for detecting JavaScript run
 ## Installation
 
 ```bash
-npm install environment-ts
+npm install environment-js
 ```
 
 ```bash
-yarn add environment-ts
+yarn add environment-js
 ```
 
 ```bash
-pnpm add environment-ts
+pnpm add environment-js
 ```
 
 ```bash
-bun add environment-ts
+bun add environment-js
 ```
 
 ## Usage
@@ -45,30 +45,30 @@ bun add environment-ts
 ### Basic Usage
 
 ```typescript
-import { isBrowser, isNode, isMobile } from 'environment-ts';
+import { isBrowser, isNode, isMobile } from "environment-js";
 
 if (isBrowser) {
-  console.log('Running in a browser!');
+  console.log("Running in a browser!");
 }
 
 if (isNode) {
-  console.log('Running in Node.js!');
+  console.log("Running in Node.js!");
 }
 
 if (isMobile) {
-  console.log('Running on a mobile device!');
+  console.log("Running on a mobile device!");
 }
 ```
 
 ### Comprehensive Detection
 
 ```typescript
-import { detectEnvironment } from 'environment-ts';
+import { detectEnvironment } from "environment-js";
 
 const env = detectEnvironment();
 
-console.log('Environment:', {
-  runtime: env.isNode ? 'Node.js' : env.isBrowser ? 'Browser' : 'Other',
+console.log("Environment:", {
+  runtime: env.isNode ? "Node.js" : env.isBrowser ? "Browser" : "Other",
   platform: env.system.platform,
   architecture: env.system.arch,
   capabilities: env.capabilities,
@@ -85,7 +85,7 @@ import {
   isDevelopment,
   getNodeVersion,
   getBrowserInfo,
-} from 'environment-ts';
+} from "environment-js";
 
 // Browser detection
 if (isChrome) {
@@ -95,17 +95,17 @@ if (isChrome) {
 
 // Platform detection
 if (isIos) {
-  console.log('iOS device detected');
+  console.log("iOS device detected");
 }
 
 // Architecture detection
 if (isArm64) {
-  console.log('ARM64 architecture');
+  console.log("ARM64 architecture");
 }
 
 // Environment detection
 if (isDevelopment) {
-  console.log('Development mode');
+  console.log("Development mode");
 }
 
 // Node.js version
@@ -234,7 +234,7 @@ Returns available platform capabilities.
 ```typescript
 const capabilities = getCapabilities();
 if (capabilities.hasWebGL) {
-  console.log('WebGL is supported');
+  console.log("WebGL is supported");
 }
 ```
 
@@ -244,7 +244,7 @@ Returns comprehensive environment detection result including all boolean flags, 
 
 ```typescript
 const env = detectEnvironment();
-console.log('Complete environment info:', env);
+console.log("Complete environment info:", env);
 ```
 
 ## TypeScript Support
@@ -258,7 +258,7 @@ import type {
   BrowserInfo,
   SystemInfo,
   EnvironmentDetectionResult,
-} from 'environment-ts';
+} from "environment-js";
 
 const handleEnvironment = (env: EnvironmentDetectionResult) => {
   // Full type safety
@@ -279,7 +279,7 @@ const handleEnvironment = (env: EnvironmentDetectionResult) => {
 
 ## Comparison with Original `environment` Package
 
-| Feature                     | environment-ts | environment       |
+| Feature                     | environment-js | environment       |
 | --------------------------- | -------------- | ----------------- |
 | TypeScript Support          | ✅ Built-in    | ❌ External types |
 | Zero Dependencies           | ✅             | ✅                |
