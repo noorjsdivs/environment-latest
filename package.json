@@ -1,6 +1,6 @@
 {
   "name": "environment-latest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modern TypeScript package for detecting JavaScript runtime environments and operating systems",
   "main": "dist/index.js",
   "module": "dist/index.js",
