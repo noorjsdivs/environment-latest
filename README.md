@@ -1,6 +1,6 @@
-# Environment JS
+# env-ts
 
-[![npm version](https://badge.fury.io/js/environment-js.svg)](https://badge.fury.io/js/environment-js)
+[![npm version](https://badge.fury.io/js/env-ts.svg)](https://badge.fury.io/js/env-ts)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![YouTube](https://img.shields.io/badge/YouTube-ReactJS%20BD-red.svg?logo=youtube)](https://www.youtube.com/@reactjsBD)
@@ -9,6 +9,21 @@
 > Modern TypeScript package for detecting JavaScript runtime environments and operating systems
 
 A comprehensive, zero-dependency TypeScript library for detecting JavaScript runtime environments, operating systems, browser engines, device types, and capabilities. This is an enhanced, modern alternative to the original `environment` package with additional features and better TypeScript support.
+
+## Why Choose env-ts?
+
+| Feature                     | env-ts      | environment       |
+| --------------------------- | ----------- | ----------------- |
+| TypeScript Support          | ✅ Built-in | ❌ External types |
+| Zero Dependencies           | ✅          | ✅                |
+| Modern Runtimes (Bun, Deno) | ✅          | ✅                |
+| Edge Functions Support      | ✅          | ❌                |
+| Device Type Detection       | ✅          | ❌                |
+| Browser Engine Detection    | ✅          | ❌                |
+| Capability Detection        | ✅          | ❌                |
+| Architecture Detection      | ✅          | ❌                |
+| Environment Variables       | ✅          | ❌                |
+| Comprehensive API           | ✅          | ❌                |
 
 ## Features
 
@@ -25,19 +40,19 @@ A comprehensive, zero-dependency TypeScript library for detecting JavaScript run
 ## Installation
 
 ```bash
-npm install environment-js
+npm install env-ts
 ```
 
 ```bash
-yarn add environment-js
+yarn add env-ts
 ```
 
 ```bash
-pnpm add environment-js
+pnpm add env-ts
 ```
 
 ```bash
-bun add environment-js
+bun add env-ts
 ```
 
 ## Usage
@@ -45,7 +60,7 @@ bun add environment-js
 ### Basic Usage
 
 ```typescript
-import { isBrowser, isNode, isMobile } from "environment-js";
+import { isBrowser, isNode, isMobile } from "env-ts";
 
 if (isBrowser) {
   console.log("Running in a browser!");
@@ -63,7 +78,7 @@ if (isMobile) {
 ### Comprehensive Detection
 
 ```typescript
-import { detectEnvironment } from "environment-js";
+import { detectEnvironment } from "env-ts";
 
 const env = detectEnvironment();
 
@@ -85,7 +100,7 @@ import {
   isDevelopment,
   getNodeVersion,
   getBrowserInfo,
-} from "environment-js";
+} from "env-ts";
 
 // Browser detection
 if (isChrome) {
@@ -258,7 +273,7 @@ import type {
   BrowserInfo,
   SystemInfo,
   EnvironmentDetectionResult,
-} from "environment-js";
+} from "env-ts";
 
 const handleEnvironment = (env: EnvironmentDetectionResult) => {
   // Full type safety
@@ -276,21 +291,6 @@ const handleEnvironment = (env: EnvironmentDetectionResult) => {
 - **Caching**: Results are computed once and cached
 - **Small Bundle Size**: < 5KB minified and gzipped
 - **Modern Build**: Built with TypeScript 5.6+ and native compiler
-
-## Comparison with Original `environment` Package
-
-| Feature                     | environment-js | environment       |
-| --------------------------- | -------------- | ----------------- |
-| TypeScript Support          | ✅ Built-in    | ❌ External types |
-| Zero Dependencies           | ✅             | ✅                |
-| Modern Runtimes (Bun, Deno) | ✅             | ✅                |
-| Edge Functions Support      | ✅             | ❌                |
-| Device Type Detection       | ✅             | ❌                |
-| Browser Engine Detection    | ✅             | ❌                |
-| Capability Detection        | ✅             | ❌                |
-| Architecture Detection      | ✅             | ❌                |
-| Environment Variables       | ✅             | ❌                |
-| Comprehensive API           | ✅             | ❌                |
 
 ## Contributing
 
