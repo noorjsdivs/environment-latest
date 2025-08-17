@@ -1,5 +1,5 @@
 {
-  "name": "env-ts",
+  "name": "environment-latest",
   "version": "1.0.0",
   "description": "Modern TypeScript package for detecting JavaScript runtime environments and operating systems",
   "main": "dist/index.js",
@@ -46,12 +46,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/noorjsdivs/env-ts.git"
+    "url": "https://github.com/noorjsdivs/environment-latest.git"
   },
   "bugs": {
-    "url": "https://github.com/noorjsdivs/env-ts/issues"
+    "url": "https://github.com/noorjsdivs/environment-latest/issues"
   },
-  "homepage": "https://github.com/noorjsdivs/env-ts#readme",
+  "homepage": "https://github.com/noorjsdivs/environment-latest#readme",
   "devDependencies": {
     "typescript": "^5.6.2"
   },

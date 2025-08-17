@@ -1,6 +1,6 @@
-# env-ts
+# environment-latest
 
-[![npm version](https://badge.fury.io/js/env-ts.svg)](https://badge.fury.io/js/env-ts)
+[![npm version](https://badge.fury.io/js/environment-latest.svg)](https://badge.fury.io/js/environment-latest)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![YouTube](https://img.shields.io/badge/YouTube-ReactJS%20BD-red.svg?logo=youtube)](https://www.youtube.com/@reactjsBD)
@@ -10,20 +10,20 @@
 
 A comprehensive, zero-dependency TypeScript library for detecting JavaScript runtime environments, operating systems, browser engines, device types, and capabilities. This is an enhanced, modern alternative to the original `environment` package with additional features and better TypeScript support.
 
-## Why Choose env-ts?
+## Why Choose environment-latest?
 
-| Feature                     | env-ts      | environment       |
-| --------------------------- | ----------- | ----------------- |
-| TypeScript Support          | ✅ Built-in | ❌ External types |
-| Zero Dependencies           | ✅          | ✅                |
-| Modern Runtimes (Bun, Deno) | ✅          | ✅                |
-| Edge Functions Support      | ✅          | ❌                |
-| Device Type Detection       | ✅          | ❌                |
-| Browser Engine Detection    | ✅          | ❌                |
-| Capability Detection        | ✅          | ❌                |
-| Architecture Detection      | ✅          | ❌                |
-| Environment Variables       | ✅          | ❌                |
-| Comprehensive API           | ✅          | ❌                |
+| Feature                     | environment-latest | environment       |
+| --------------------------- | ------------------ | ----------------- |
+| TypeScript Support          | ✅ Built-in        | ❌ External types |
+| Zero Dependencies           | ✅                 | ✅                |
+| Modern Runtimes (Bun, Deno) | ✅                 | ✅                |
+| Edge Functions Support      | ✅                 | ❌                |
+| Device Type Detection       | ✅                 | ❌                |
+| Browser Engine Detection    | ✅                 | ❌                |
+| Capability Detection        | ✅                 | ❌                |
+| Architecture Detection      | ✅                 | ❌                |
+| Environment Variables       | ✅                 | ❌                |
+| Comprehensive API           | ✅                 | ❌                |
 
 ## Features
 
@@ -40,19 +40,19 @@ A comprehensive, zero-dependency TypeScript library for detecting JavaScript run
 ## Installation
 
 ```bash
-npm install env-ts
+npm install environment-latest
 ```
 
 ```bash
-yarn add env-ts
+yarn add environment-latest
 ```
 
 ```bash
-pnpm add env-ts
+pnpm add environment-latest
 ```
 
 ```bash
-bun add env-ts
+bun add environment-latest
 ```
 
 ## Usage
@@ -60,7 +60,7 @@ bun add env-ts
 ### Basic Usage
 
 ```typescript
-import { isBrowser, isNode, isMobile } from "env-ts";
+import { isBrowser, isNode, isMobile } from "environment-latest";
 
 if (isBrowser) {
   console.log("Running in a browser!");
@@ -78,7 +78,7 @@ if (isMobile) {
 ### Comprehensive Detection
 
 ```typescript
-import { detectEnvironment } from "env-ts";
+import { detectEnvironment } from "environment-latest";
 
 const env = detectEnvironment();
 
@@ -100,7 +100,7 @@ import {
   isDevelopment,
   getNodeVersion,
   getBrowserInfo,
-} from "env-ts";
+} from "environment-latest";
 
 // Browser detection
 if (isChrome) {
@@ -273,7 +273,7 @@ import type {
   BrowserInfo,
   SystemInfo,
   EnvironmentDetectionResult,
-} from "env-ts";
+} from "environment-latest";
 
 const handleEnvironment = (env: EnvironmentDetectionResult) => {
   // Full type safety
